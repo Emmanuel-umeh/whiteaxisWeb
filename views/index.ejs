@@ -94,7 +94,7 @@
                     <a
                       class="nav-link link mbr-editable-menu-item"
                       href="/#pricing-table2-f"
-                      >DRIVE</a
+                      >RIDER</a
                     >
                   </li>
                   <li class="nav-item">
@@ -105,26 +105,32 @@
                     >
                   </li>
             
-                  <li class="nav-item nav-btn">
-                    <a
-                      class="nav-link btn btn-white btn-white-outline mbr-editable-menu-item"
-                      href="/"
-                      ><span
-                        class="mbri-apple mbr-iconfont mbr-iconfont-btn"
-                      ></span
-                      >GET ON PLAY STORE</a
-                    >
-                  </li>
-                  <li class="nav-item nav-btn">
-                    <a
-                      class="nav-link btn btn-white btn-white-outline mbr-editable-menu-item"
-                      href="/"
-                      ><span
-                        class="mbri-android mbr-iconfont mbr-iconfont-btn"
-                      ></span
-                      >GET ON IOS STORE</a
-                    >
-                  </li>
+
+                  <% if(os== "AndroidOS"){ %>
+                    <li class="nav-item nav-btn">
+                      <a href="https://play.google.com/"><img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="150" height="60" alt="Get it on Google Play" border="0"></a> 
+                     
+                    </li>
+                  <% } else if(os== "iOS"){ %>  
+                  
+
+                    <li class="nav-item nav-btn">
+                      <a href="https://itunes.apple.com"><img src="https://musicofnature.com/wp-content/uploads/2019/01/apple-appstore-button-e1537877335990.png" width="150" height="44" alt="Download on the App Store" border="0"></a> 
+                  
+                    </li>
+                  <% } else { %>  
+                    <li class="nav-item nav-btn">
+                      <a href="https://itunes.apple.com"><img src="https://musicofnature.com/wp-content/uploads/2019/01/apple-appstore-button-e1537877335990.png" width="150" height="44" alt="Download on the App Store" border="0"></a> 
+                  
+                    </li>
+                    <li class="nav-item nav-btn">
+                      <a href="https://play.google.com/"><img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="150" height="60" alt="Get it on Google Play" border="0"></a> 
+                     
+                    </li>
+                    
+                    <% } 
+                    
+                    %>
                 </ul>
                 <button
                   hidden=""
@@ -164,7 +170,7 @@
                   class="mbr-table-cell col-md-5 content-size text-xs-center text-md-right"
                 >
                   <h3 class="mbr-section-title display-2">
-                    WELCOME TO WHITE AXIS
+                    INNOVATIVE AND EFFICIENT ON-DEMAND LOGISTICS SERVICE
                   </h3>
 
                   <div class="mbr-section-text">
@@ -173,14 +179,29 @@
                     </p>
                   </div>
 
-                  <div class="mbr-section-btn">
-                    <a class="btn btn-black" href="/"
-                      >IPHONE</a
-                    >
-                    <a class="btn btn-black" href="/"
-                      >ANDROID</a
-                    >
-                  </div>
+
+              
+
+                    <% if(os== "AndroidOS"){ %>
+                      <div class="mbr-section-btn">
+                        <a href="https://play.google.com/"><img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="150" height="60" alt="Get it on Google Play" border="0"></a> 
+                        <!-- <a href="https://itunes.apple.com"><img src="https://musicofnature.com/wp-content/uploads/2019/01/apple-appstore-button-e1537877335990.png" width="150" height="44" alt="Download on the App Store" border="0"></a>  -->
+                      </div>
+                    <% } else if(os== "iOS"){ %>  
+                      <div class="mbr-section-btn">
+                        <!-- <a href="https://play.google.com/"><img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="150" height="60" alt="Get it on Google Play" border="0"></a>  -->
+                        <a href="https://itunes.apple.com"><img src="https://musicofnature.com/wp-content/uploads/2019/01/apple-appstore-button-e1537877335990.png" width="150" height="44" alt="Download on the App Store" border="0"></a> 
+                      </div>
+                   <% } else { %>  
+                    <div class="mbr-section-btn">
+                      <a href="https://play.google.com/"><img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="150" height="60" alt="Get it on Google Play" border="0"></a> 
+                      <a href="https://itunes.apple.com"><img src="https://musicofnature.com/wp-content/uploads/2019/01/apple-appstore-button-e1537877335990.png" width="150" height="44" alt="Download on the App Store" border="0"></a> 
+                    </div>
+                    
+                    <% } 
+                    
+                    %>
+                 
                 </div>
                 <div
                   class="mbr-table-cell mbr-valign-top mbr-left-padding-md-up col-md-7 image-size"
@@ -216,13 +237,13 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
-            <h3 class="mbr-section-title display-2">WHITE AXIS OVERVIEW</h3>
+            <h3 class="mbr-section-title display-2">How It Works</h3>
           </div>
         </div>
       </div>
     </section>
 
-    <section
+    <!-- <section
       class="mbr-section article mbr-section__container"
       id="content1-j"
       style="
@@ -239,7 +260,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section
       class="mbr-cards mbr-section mbr-section-nopadding"
@@ -260,12 +281,12 @@
                 />
               </div>
               <div class="card-block">
-                <h4 class="card-title">Pick A Destination</h4>
-                <h5 class="card-subtitle">Step 1</h5>
+                <h4 class="card-title"> Select Service</h4>
+                <h5 class="card-text">Step 1</h5>
                 <p class="card-text">
                   White axis provides an easy to use interface for the everyday man to use and understand efficiently.
 
-Simply select your destination at a click of a button                </p>
+Simply select your choice of logistics              </p>
               </div>
             </div>
           </div>
@@ -284,14 +305,14 @@ Simply select your destination at a click of a button                </p>
               </div>
               <div class="card-block">
                 <h4 class="card-title">Get The Pricing</h4>
-                <h5 class="card-subtitle">Step 2</h5>
+                <h5 class="card-text">Step 2</h5>
                 <p class="card-text">
                   
                   <a
                     href="#"
-                    style="text-decoration: underline"
+                  
                     class="text-black"
-                    >White axis gives you a cheap and affordable cost of transportation</a
+                    >White axis gives you a cheap and affordable cost of transportation. Pick a destination and get your pricing</a
                   >
                   for you.
                 </p>
@@ -313,7 +334,7 @@ Simply select your destination at a click of a button                </p>
               </div>
               <div class="card-block">
                 <h4 class="card-title">Get Picked Up</h4>
-                <h5 class="card-subtitle">
+                <h5 class="card-text">
                  Step 3
                 </h5>
                 <p class="card-text">
@@ -337,7 +358,7 @@ Simply select your destination at a click of a button                </p>
               </div>
               <div class="card-block">
                 <h4 class="card-title">Rate Your experience</h4>
-                <h5 class="card-subtitle">
+                <h5 class="card-text">
                   Step 4
                 </h5>
                 <p class="card-text">
@@ -350,7 +371,7 @@ Simply select your destination at a click of a button                </p>
       </div>
     </section>
 
-    <section
+    <!-- <section
       class="mbr-section"
       id="msg-box4-6"
       style="
@@ -397,7 +418,7 @@ Simply select your destination at a click of a button                </p>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section
       class="mbr-cards mbr-section mbr-section-nopadding"
@@ -414,13 +435,13 @@ Simply select your destination at a click of a button                </p>
               <div class="card-img iconbox">
                 <a
                   href="/"
-                  class="mbri-hearth mbr-iconfont mbr-iconfont-features4"
+                  class="mbri-delivery mbr-iconfont mbr-iconfont-features4"
                   style="color: rgb(233, 165, 211)"
                 ></a>
               </div>
               <div class="card-block">
-                <h4 class="card-title">Quality Rides</h4>
-                <h5 class="card-subtitle">Get access to seamless, fast and quality rides</h5>
+                <h4 class="card-title">Multiple Vendors</h4>
+                <h5 class="card-subtitle">Choosing the service you need</h5>
                 <!-- <p class="card-text">
                   Bootstrap 4 has been noted as one of the most reliable and
                   proven frameworks and Mobirise has been equipped to develop
@@ -439,13 +460,13 @@ Simply select your destination at a click of a button                </p>
               <div class="card-img iconbox">
                 <a
                   href="/"
-                  class="mbri-globe-2 mbr-iconfont mbr-iconfont-features4"
+                  class="mbri-bookmark mbr-iconfont mbr-iconfont-features4"
                   style="color: rgb(39, 170, 224)"
                 ></a>
               </div>
               <div class="card-block">
-                <h4 class="card-title">Quick Access</h4>
-                <h5 class="card-subtitle">Get Access to Locations All Around You</h5>
+                <h4 class="card-title">Tracking </h4>
+                <h5 class="card-subtitle">- Tracking the progress of your delivery </h5>
                 <!-- <p class="card-text">
                   One of Bootstrap 4's big points is responsiveness and Mobirise
                   makes effective use of this by generating highly responsive
@@ -464,14 +485,14 @@ Simply select your destination at a click of a button                </p>
               <div class="card-img iconbox">
                 <a
                   href="/"
-                  class="mbri-smile-face mbr-iconfont mbr-iconfont-features4"
+                  class="mbri-speed mbr-iconfont mbr-iconfont-features4"
                   style="color: rgb(193, 193, 193)"
                 ></a>
               </div>
               <div class="card-block">
-                <h4 class="card-title">Comfort And Satisfaction</h4>
+                <h4 class="card-title">Quick Access</h4>
                 <h5 class="card-subtitle">
-                  Built With Your Satisfaction At Our Core
+                  Getting the service closest to you
                 </h5>
                 <!-- <p class="card-text">
                   Google has a highly exhaustive list of fonts compiled into its
@@ -718,16 +739,46 @@ Simply select your destination at a click of a button                </p>
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 text-xs-center">
-            <h3 class="mbr-section-title display-2">DOWNLOAD NOW</h3>
+            <h3 class="mbr-section-title display-2">Ride with Us</h3>
 
-            <div>
-              <a class="btn btn-black" href="#">IPHONE</a>
-              <a class="btn btn-black" href="#">ANDROID</a>
-            </div>
+               <% if(os== "AndroidOS"){ %>
+                      <div >
+                        <a href="https://play.google.com/"><img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="150" height="60" alt="Get it on Google Play" border="0"></a> 
+                        <!-- <a href="https://itunes.apple.com"><img src="https://musicofnature.com/wp-content/uploads/2019/01/apple-appstore-button-e1537877335990.png" width="150" height="44" alt="Download on the App Store" border="0"></a>  -->
+                      </div>
+                    <% } else if(os== "iOS"){ %>  
+                      <div >
+                        <!-- <a href="https://play.google.com/"><img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="150" height="60" alt="Get it on Google Play" border="0"></a>  -->
+                        <a href="https://itunes.apple.com"><img src="https://musicofnature.com/wp-content/uploads/2019/01/apple-appstore-button-e1537877335990.png" width="150" height="44" alt="Download on the App Store" border="0"></a> 
+                      </div>
+                   <% } else { %>  
+                    <div >
+                      <a href="https://play.google.com/"><img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="150" height="60" alt="Get it on Google Play" border="0"></a> 
+                      <a href="https://itunes.apple.com"><img src="https://musicofnature.com/wp-content/uploads/2019/01/apple-appstore-button-e1537877335990.png" width="150" height="44" alt="Download on the App Store" border="0"></a> 
+                    </div>
+                    
+                    <% } 
+                    
+                    %>
           </div>
         </div>
       </div>
     </section>
+
+      <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/5fc7b88c920fc91564ccd214/default';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+  
 
     <script src="assets/web/assets/jquery/jquery.min.js"></script>
     <script src="assets/tether/tether.min.js"></script>

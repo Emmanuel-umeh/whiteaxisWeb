@@ -1,18 +1,30 @@
 const express = require("express")
 const router = express.Router();
 
+var MobileDetect = require('mobile-detect')
+  
+
+    router.get("/" , async(req,res)=>{
+
+        md =await  new MobileDetect(req.headers['user-agent'])
 
 
-
-
-    router.get("/",(req,res)=>{
-        res.render('index.ejs')
+        console.log( md.os() );  
+        res.render('index.ejs',{
+            os : md.os()
+            // AndroidOS
+        })
     })
 
     /** ABOUT ROUTE/PAGE */
         router.get("/about", (req, res) => {
-            res.render("home/about.ejs")
+            res.render("home/about.ejs",{
+                os : md.os()
+                // AndroidOS
+            })
         })
+
+
     /** ABOUT ROUTE/PAGE */
 
 
