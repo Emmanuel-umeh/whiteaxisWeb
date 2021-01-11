@@ -39,6 +39,10 @@ var MobileDetect = require('mobile-detect')
     router.get("/services", (req, res) => {
         res.render("home/services.ejs")            
     })
+    router.get("/webmail", (req, res) => {
+    
+        res.redirect("https://www.whiteaxis.ng:2096/cpsess6553187925/3rdparty/roundcube/?_task=mail&_mbox=INBOX")            
+    })
 
 module.exports = router
 
